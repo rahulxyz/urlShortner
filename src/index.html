@@ -7,6 +7,7 @@
     <title>Short URL</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="./index.js"></script>
 </head>
 
 <body>
@@ -17,8 +18,8 @@
                     <img src="../images/pattern-bg.png" class="img-contain">
                     <div class="description">
                         <p>URL Shortner</p>
-                        <input type="search" placeholder="Enter url: eg. https://www.google.com/" />
-                        <img src="../images/icon-arrow.svg">
+                        <input type="search" placeholder="Enter url: eg. https://www.google.com/" id="url"/>
+                        <img src="../images/icon-arrow.svg" id="submit-url" onclick="submitUrl()">
                     </div>
                 </div>
             </div>
@@ -29,6 +30,23 @@
                 <div class="content">
                     <img src="../images/url-short-bg.png" class="img-contain">
                     <div class="description">
+                        <ul>
+                            <li>
+                                <h6>Original</h6>
+                                <p class="original">Check <a href="#">Here</a>!
+                                    <span class="tooltip">https://css-tricks.com/snippets/css/css-box-shadow/</span>
+                                </p>
+                                
+                            </li>
+                            <li>
+                                <h6>Short Url</h6>
+                                <a href="#" class="short-url">https://tinyurl.com/yxj2wlbj</a>
+                            </li>
+                            <li>
+                                <h6>TimeZone</h6>
+                                <p class="timestamp">UTC -05:00</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -101,18 +101,55 @@ main .details{
 }
 
 .details .content .description ul{
-    width: 340px;
-    background-color: black;
-    color: #fafafa;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 25px grey;
+    color: black;
     margin: 0 auto;
-    border-radius: 4px;
+    border-radius: 12px;
+    padding: 24px 24px;
 }
 
 .details .content .description ul li {
     font-size: inherit;
-    padding: 24px;
+    padding: 0 24px;
     border-bottom: 1px solid #fafafa;
     text-align: start;
+}
+
+.details .content .description ul li  {
+    border-right: 1px solid grey;
+    width: 100%;
+    text-align: center;
+}
+
+.details .content .description ul li .tooltip{
+    display: none;
+    color: white;
+    background: grey;
+    position: absolute;
+    padding: 12px;
+    border-radius: 4px;
+    top:85%;
+    left:0%;
+}
+
+.details .content .description ul li .original:hover .tooltip{
+    display: inline-block;
+}
+
+.details .content .description ul li:last-child{
+    border-right: none;
+}
+
+.details .content .description ul li h6 {
+    color: grey;
+}
+.details .content .description ul li h6, p {
+    margin: 8px 0;
+
 }
 
 @media (max-width: 1440px) {
